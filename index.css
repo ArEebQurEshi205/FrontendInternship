@@ -1,0 +1,851 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+}
+
+.nav-menu {
+    display: inline-flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.nav-menu a:hover {
+    opacity: 1;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('Image.png');
+    /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.cta-button {
+    background-color: #5a29e4;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #3f1aad;
+}
+
+/* Navigation Arrows */
+.hero-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.nav-arrow:hover {
+    opacity: 1;
+}
+
+/* Content Section */
+.content-section {
+    background-image: url('Image\ \(1\).png');
+    /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 540px;
+    /* Matches the height in your design (1400 x 540) */
+    text-align: center;
+}
+
+.content-container {
+    max-width: 800px;
+    color: #fff;
+}
+
+.content-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.content-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content-description {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Features Section */
+.features-section {
+    background-image: url('Rectangle.png');
+    /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    min-height: 736px;
+    /* Matches the height in your design (1400 x 736) */
+}
+
+.features-container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 40px;
+}
+
+.features-image img {
+    width: 100%;
+    max-width: 500px;
+    /* Adjust width according to design */
+    height: auto;
+
+
+}
+
+.features-content {
+    color: #fff;
+    flex: 1;
+}
+
+.features-heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.features-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.feature-blocks {
+    display: flex;
+    gap: 30px;
+}
+
+.feature-block {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+}
+
+.feature-block img {
+    height: auto;
+    text-align: left;
+}
+
+.feature-block i.icon {
+    display: block;
+    font-size: 2rem;
+    /* Adjust the icon size */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Sign-Up Section */
+.signup-section {
+    background-image: url('Background.png'); /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    color: #fff;
+}
+
+.signup-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 40px;
+    align-items: center;
+}
+
+.signup-text {
+    flex: 1;
+}
+
+.signup-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.signup-text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.signup-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signup-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.create-account-btn, .twitter-login-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.create-account-btn {
+    background-color: #4cc9f0; /* Light blue color for "Create an Account" button */
+}
+
+.twitter-login-btn {
+    background-color: #1da1f2; /* Twitter blue color for "Login via Twitter" button */
+}
+
+.or-separator {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #120d38; /* Dark blue background color */
+    padding: 80px 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #1c1456; /* Slightly darker shade for cards */
+    border: 1px solid #2a1b75; /* Border for the card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.testimonial-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #a3b1ff; /* Light color for names */
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-image: url('Background.png'); /* Replace with your actual background image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent overlay */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.cta-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-play {
+    background-color: #ff4b5c; /* Red play button color */
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.btn-get-started {
+    background-color: #30e3ca; /* Green button color */
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-get-started:hover {
+    background-color: #20b2aa; /* Darker green on hover */
+}
+
+/* Last Works Section */
+.last-works-section {
+    background-color: #1a1a3d; /* Dark blue background color */
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.last-works-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.last-works-header h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.btn-view-all {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-view-all:hover {
+    background-color: #ffffff;
+    color: #1a1a3d;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.work-item {
+    background-color: #26264d;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.work-item p {
+    font-size: 0.9rem
+}
+
+.team-section {
+  background-color: #2e1fad;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  width: 200px;
+  text-align: center;
+}
+
+.team-member-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.team-member-name {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.team-member-role {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #ddd;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    background-image: url(12Background\ \(1\).png);
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    gap: 50px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .contact-info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .contact-details li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-details i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #00aced;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .send-copy {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .send-copy label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .send-button {
+    background-color: #00aced;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .send-button:hover {
+    background-color: #008bb9;
+  }
+  
+
+  .pricing-section {
+    background: url('Mask.png') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.pricing-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pricing-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.pricing-container p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.pricing-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.features-list li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.get-started-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: white;
+    color: #333;
+}
+
+.highlighted {
+    background-color: #FF6584;
+    color: white;
+}
+
+.professional {
+    border-color: #FF6584;
+}
+
+.footer {
+    background-color: #2d0391; /* Dark blue color */
+    color: white;
+    padding: 20px 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.footer-left h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.footer-links,
+.footer-policy,
+.footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links li a,
+.footer-policy li a,
+.footer-social li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-links li a:hover,
+.footer-policy li a:hover,
+.footer-social li a:hover {
+    opacity: 1;
+}
+
+.footer-social li {
+    display: inline-block;
+}
+
+.footer-social li a i {
+    font-size: 1.2rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 8px 20px;
+    }
+
+    .content-heading {
+        font-size: 1.5rem;
+    }
+
+    .content-description {
+        font-size: 0.9rem;
+    }
+
+    .features-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-image {
+        margin-bottom: 20px;
+    }
+
+    .feature-blocks {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .signup-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
